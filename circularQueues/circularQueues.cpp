@@ -68,6 +68,9 @@ public:
 		if (FRONT == -1) {
 			cout << "Queue is empty";
 			return;
-		
+		}
+
+		cout << "\nElement in the Queue are...\n";
+
 	}
 };
