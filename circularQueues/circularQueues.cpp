@@ -18,7 +18,7 @@ public:
 		cout << endl;
 
 		//cek antrian penuh
-		if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1)){
+		if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1)) {
 			cout << "\nQueue overflow\n";
 			return;
 		}
@@ -37,7 +37,7 @@ public:
 		}
 		queue_array[REAR] = num;
 	}
-	
+
 	void remove() {
 		//check apakah antrian kosong
 		if (FRONT == -1) {
@@ -74,13 +74,13 @@ public:
 
 		//jika FRONT_position <= Rear_position, iterasi dari FRONT hingga REAR
 		if (FRONT_position <= REAR_position) {
-			while (FRONT_position <= max - 1) {
+			while (FRONT_position <= REAR_position) {
 				cout << queue_array[FRONT_position] << "	";
 				FRONT_position++;
 			}
 			cout << endl;
 		}
-		else{
+		else {
 			//jika FRONT_position > Rear_position, iterasi dari FRONT hingga akhir array
 		}
 	}
