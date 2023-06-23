@@ -78,6 +78,10 @@ public:
 				cout << queue_array[FRONT_position] << "	";
 				FRONT_position++;
 			}
+			cout << endl;
+		}
+		else{
+			//jika FRONT_position > Rear_position, iterasi dari FRONT hingga akhir array
 		}
 	}
 };
